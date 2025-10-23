@@ -9,13 +9,9 @@
 body {
     background-image: linear-gradient(360deg, var(--main-shade1) 0%, var(--main-shade3) 100%);
     text-align: center;
-    height: 70vh;
 }
 
 form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
     gap: 20px;
 
 }
@@ -27,7 +23,7 @@ input[type="text"] {
     border: none;
     padding: 10px;
     font-size: 20px;
-    box-shadow: 2px 3px 0 var(--main-shade4);
+    box-shadow: 3px 3px 0 var(--main-shade4);
 }
 
 input[type="submit"] {
@@ -52,7 +48,59 @@ input[type="submit"]:hover {
 .nadpis {
     color: var(--main-shade5);
     padding: 15px;
-    margin-top: 180px;
     font-size: 70px;
     font-family: 'Goldman', serif;
+}
+
+.prekliky {
+    padding: 30px;
+}
+
+.odkazy a {
+    display: flex;
+    flex-direction: row;
+
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.hlavni_cast {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 1289px;
+}
+
+@media (max-height: 800px) {
+    .hlavni_cast {
+        height: 1289px;
+    }
+    
+}
+
+@media (max-width: 600px) {
+    body {
+        background: none;
+        background-color: var(--main-shade2);
+    }
+    
+    .hlavni_cast {
+        display: block;
+        height: auto;
+        margin-top: 200px;
+    }
+
+    input[type="text"] {
+        width: 300px;
+    }
+
+    form {
+        margin-top: 50px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center
+    }
+
 }
