@@ -1,0 +1,21 @@
+.body {
+    background-color: red;
+}
+
+.form {
+    background-color: red;
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    width: 500px;
+    height: 30px;
+    font-size: 16px;
+    background-color: red;
+}
+
+.p {
+    background-color: red;
+    width: 200px;
+}
