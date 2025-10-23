@@ -17,7 +17,7 @@ form {
     align-items: center;
     flex-direction: column;
     gap: 20px;
-    
+
 }
 
 input[type="text"] {
@@ -27,7 +27,7 @@ input[type="text"] {
     border: none;
     padding: 10px;
     font-size: 20px;
-    box-shadow:  2px 3px 0 var(--main-shade4);
+    box-shadow: 2px 3px 0 var(--main-shade4);
 }
 
 input[type="submit"] {
@@ -36,15 +36,17 @@ input[type="submit"] {
     height: 40px;
     border: none;
     font-size: 20px;
-    box-shadow:  2px 3px 0 var(--main-shade4);
+    box-shadow: 2px 3px 0 var(--main-shade4);
     background-color: var(--main-shade3);
     color: white;
     cursor: pointer;
+    transition: 0.2s;
+
 }
 
 input[type="submit"]:hover {
     background-color: var(--main-shade5);
-    transform: perspective(50px);
+    transition: 0.2s;
 }
 
 .nadpis {
