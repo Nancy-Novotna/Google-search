@@ -45,7 +45,6 @@ input[type="submit"]:hover {
 }
 
 .nadpis {
-    margin-bottom: 0;
     color: var(--main-shade5);
     padding: 15px;
     font-size: 70px;
@@ -57,10 +56,15 @@ input[type="submit"]:hover {
     margin-top: 0;
 }
 
+.podnadpis-span {
+    font-size: 25px;
+}
+
 .prekliky {
     display: flex;
     justify-content: flex-end;
     padding: 30px;
+    margin-top: 20px;
 }
 
 .odkazy {
@@ -130,6 +134,12 @@ input[type="submit"]:hover {
 }
 
 @media (min-height: 500px) {
+    .hlavni_cast {
+        height: 713px;
+    }
+}
+
+@media screen {
     .hlavni_cast {
         height: 713px;
     }
