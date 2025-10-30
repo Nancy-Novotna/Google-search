@@ -81,6 +81,15 @@ input[type="submit"]:hover {
     background-color: var(--main-shade1);
     width: 170px;
     border-radius: 10px;
+
+    transition: 0.4s;
+
+}
+
+.odkazy a:hover {
+    background-color: var(--main-shade4);
+    color: white;
+    transition: 0.4s;
 }
 
 .hlavni_cast {
