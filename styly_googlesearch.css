@@ -13,7 +13,6 @@ body {
 
 form {
     gap: 20px;
-
 }
 
 input[type="text"] {
@@ -46,22 +45,38 @@ input[type="submit"]:hover {
 }
 
 .nadpis {
+    margin-bottom: 0;
     color: var(--main-shade5);
     padding: 15px;
     font-size: 70px;
     font-family: 'Goldman', serif;
 }
 
+.podnadpis {
+    padding: 0;
+    margin-top: 0;
+}
+
 .prekliky {
+    display: flex;
+    justify-content: flex-end;
     padding: 30px;
 }
 
-.odkazy a {
+.odkazy {
+    gap: 20px;
     display: flex;
     flex-direction: row;
+    justify-content: flex-end;
+}
 
+.odkazy a {
     list-style-type: none;
     text-decoration: none;
+    color: var(--main-shade5);
+    background-color: var(--main-shade1);
+    width: 170px;
+    border-radius: 10px;
 }
 
 .hlavni_cast {
@@ -69,14 +84,23 @@ input[type="submit"]:hover {
     justify-content: center;
     flex-direction: column;
     align-items: center;
-    height: 1289px;
+}
+
+.w3c {
+    display: flex;
+    gap: 10px;
+}
+
+.w3c_jednotlive {
+    margin: 0;
+    padding: 0;
 }
 
 @media (max-height: 800px) {
     .hlavni_cast {
         height: 1289px;
     }
-    
+
 }
 
 @media (max-width: 600px) {
@@ -84,7 +108,7 @@ input[type="submit"]:hover {
         background: none;
         background-color: var(--main-shade2);
     }
-    
+
     .hlavni_cast {
         display: block;
         height: auto;
@@ -103,4 +127,10 @@ input[type="submit"]:hover {
         align-items: center
     }
 
+}
+
+@media (min-height: 500px) {
+    .hlavni_cast {
+        height: 713px;
+    }
 }

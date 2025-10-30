@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Google Search Images</title>
+
+    <title>Google Search obrázky</title>
 
     <link rel="stylesheet" href="styly_googlesearch.css">
 
@@ -20,12 +20,34 @@
 <body>
     <div id="#hlavni_cast" class="hlavni_cast">
         <h1 class="nadpis">Google search</h1>
+        <h3 class="podnadpis">Obrázky</h3>
 
-        <form method="get" action="https://images.google.com/images">
+        <form action="https://images.google.com/images">
             <input type="text" name="q">
             <input type="submit" value="Hledat">
         </form>
-    </div>
+        <div class="prekliky">
+            <ul class="odkazy">
+                <a href="index.html">Standartní vyhledávaní</a>
+                <a href="advanced.html">Rozšířené vyhledávaní</a>
+            </ul>
+        </div>
+        <div class="w3c">
+            <p class="w3c_jednotlive">
+                <a href="https://jigsaw.w3.org/css-validator/check/referer" target="_blank">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Ověřit CSS!" />
+                </a>
+            </p>
+            <p class="w3c_jednotlive">
+                <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fnancy-novotna.github.io%2FGoogle-search%2F"
+                    target="_blank">
+                    <img style="border:0;width:88px;height:31px" src="https://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Ověřit HTML!">
+                </a>
+            </p>
+        </div>
+
 </body>
 
 </html>
